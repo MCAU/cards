@@ -1,0 +1,63 @@
+name: TCGMCAU
+version: ${project.version}-${build.number}
+description: |
+    ${project.description}
+    Built ${git.build.time} from git revision ${git.commit.id.abbrev}
+    <${git.commit.user.name}> ${git.commit.message.short}
+
+author: Ullarah
+authors: [TerrorBite]
+
+main: com.ullarah.tcgmcau.mInit
+
+depend: [LibsDisguises, ProtocolLib, mcMMO, Vault, WorldEdit, WorldGuard]
+
+commands:
+  cards:
+    description: Allows you to view instructions and register for cards.
+    usage: |
+      <command> : View instructions for cards.
+      <command> register : Create a temporary password for registering.
+      <command> give : Gives a card to a player.
+      <command> pwreset : Reset a players password.
+      <command> purge : Purge a players stash.
+  redeem:
+    description: Redeems the card that is currently active in a stash.
+    usage: |
+      <command> code : Change code to the code that is displayed on the card.
+  gift:
+    description: Gifts a card from your stash to another player
+    usage: |
+      <command> code : Change code to the code that is displayed on the card.
+
+permissions:
+  cards.default:
+    description: Sets single and total cards for newbies. Settings in config.yml
+  cards.plus:
+    description: Sets single and total cards for plus users. Settings in config.yml
+  cards.donator:
+    description: Sets single and total cards for donators. Settings in config.yml
+  cards.dplus:
+    description: Sets single and total cards for donator plus users. Settings in config.yml
+  cards.staff:
+    description: Sets single and total cards for staff users. Settings in config.yml
+  cards.staff.commands:
+    description: Grant all of the staff commands
+    children:
+      cards.staff.ability: true
+      cards.staff.advert: true
+      cards.staff.brand: true
+      cards.staff.chance: true
+      cards.staff.check: true
+      cards.staff.force: true
+      cards.staff.ghost: true
+      cards.staff.give: true
+      cards.staff.give.random: true
+      cards.staff.idreset: true
+      cards.staff.info: true
+      cards.staff.list: true
+      cards.staff.maintenance: true
+      cards.staff.map: true
+      cards.staff.purge: true
+      cards.staff.pwreset: true
+      cards.staff.reload: true
