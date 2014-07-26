@@ -1,7 +1,7 @@
 package com.ullarah.tcgmcau.ext;
 
-import net.minecraft.server.v1_7_R3.ContainerAnvil;
-import net.minecraft.server.v1_7_R3.EntityHuman;
+import net.minecraft.server.v1_7_R4.ContainerAnvil;
+import net.minecraft.server.v1_7_R4.EntityHuman;
 
 public class eAnvil extends ContainerAnvil {
 

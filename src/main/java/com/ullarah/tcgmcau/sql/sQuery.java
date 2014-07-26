@@ -2,9 +2,11 @@ package com.ullarah.tcgmcau.sql;
 
 import com.ullarah.tcgmcau.command.cAbility;
 import com.ullarah.tcgmcau.mInit;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+
 import org.json.simple.parser.ParseException;
 
 import java.sql.ResultSet;
@@ -22,34 +24,6 @@ public class sQuery {
             if( res.next() ){
 
                 String uuid = res.getString("uuid");
-
-                return UUID.fromString( uuid.substring(0, 8) + "-" + uuid.substring(8, 12) + "-" + uuid.substring(12, 16) + "-" + uuid.substring(16, 20) + "-" + uuid.substring(20, 32) );
-
-            }
-
-        } catch (SQLException e) {
-
-            e.printStackTrace();
-
-            return null;
-
-        }
-
-        return null;
-
-    }
-
-    public static UUID getTempPlayerUUID( String player ) {
-
-        String uuid;
-
-        try {
-
-            ResultSet res = mInit.getSqlConnection().sqlQuery("SELECT uuid FROM users_temp WHERE user = ?", new String[]{player});
-
-            if( res.next() ){
-
-                uuid = res.getString("uuid");
 
                 return UUID.fromString( uuid.substring(0, 8) + "-" + uuid.substring(8, 12) + "-" + uuid.substring(12, 16) + "-" + uuid.substring(16, 20) + "-" + uuid.substring(20, 32) );
 
@@ -206,7 +180,7 @@ public class sQuery {
 
     }
 
-    public static int getCardID( String cardCode ){
+    private static int getCardID(String cardCode){
 
         ResultSet res = mInit.getSqlConnection().sqlQuery("SELECT id FROM cards WHERE code = ?", new String[]{cardCode});
 

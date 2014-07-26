@@ -5,15 +5,15 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.PriorityQueue;
 
-import net.minecraft.server.v1_7_R3.PacketPlayOutSetSlot;
+import net.minecraft.server.v1_7_R4.PacketPlayOutSetSlot;
 
 import org.apache.commons.lang.Validate;
 
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
-import org.bukkit.craftbukkit.v1_7_R3.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R4.inventory.CraftItemStack;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

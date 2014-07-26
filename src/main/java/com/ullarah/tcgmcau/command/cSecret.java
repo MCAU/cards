@@ -2,12 +2,12 @@ package com.ullarah.tcgmcau.command;
 
 import com.ullarah.tcgmcau.mInit;
 
-import net.minecraft.server.v1_7_R3.PacketPlayOutGameStateChange;
+import net.minecraft.server.v1_7_R4.PacketPlayOutGameStateChange;
 import net.minecraft.util.org.apache.commons.io.output.StringBuilderWriter;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import java.io.IOException;

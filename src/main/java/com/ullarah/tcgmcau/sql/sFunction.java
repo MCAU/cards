@@ -64,19 +64,19 @@ public class sFunction extends Thread {
 
     }
 
-    public boolean sqlCheckConnection() {
+    boolean sqlCheckConnection() {
 
         return sqlConnection != null;
 
     }
 
-    public Connection sqlGetConnection() {
+    Connection sqlGetConnection() {
 
         return sqlConnection;
 
     }
 
-    public void sqlMaintenaceConnection() {
+    void sqlMaintenaceConnection() {
 
         mInit.setMaintenanceCheck(true);
 

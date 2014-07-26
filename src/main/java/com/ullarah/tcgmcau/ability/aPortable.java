@@ -2,10 +2,10 @@ package com.ullarah.tcgmcau.ability;
 
 import com.ullarah.tcgmcau.ext.eAnvil;
 
-import net.minecraft.server.v1_7_R3.EntityPlayer;
-import net.minecraft.server.v1_7_R3.PacketPlayOutOpenWindow;
+import net.minecraft.server.v1_7_R4.EntityPlayer;
+import net.minecraft.server.v1_7_R4.PacketPlayOutOpenWindow;
 
-import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import org.json.simple.JSONObject;
